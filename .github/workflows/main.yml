@@ -1,0 +1,21 @@
+name: My first workflow
+
+on:
+push:
+branches: [feature/user]
+workflow_dispatch:
+UI
+
+jobs:
+say-hello:
+runs-on: ubuntu-latest
+
+steps:
+- name: Print a message
+run: echo "Hello from github actions!"
+
+-name: Show the date
+run: date
+
+-name: Show system info
+run: uname -a
